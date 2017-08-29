@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>ExternalMapsPlugin</id>
+    <version>1.0.0</version>
+    <authors>Mushtaq</authors>
+    <owners>Mushtaq</owners>
+    <iconUrl>https://cdn.worldvectorlogo.com/logos/xamarin.svg</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>External Maps Plugin for Xamarin</description>
+    <releaseNotes>External Maps Plugin for Xamarin.</releaseNotes>
+    <copyright>Copyright 2017</copyright>
+    <tags>Maps Xamarin</tags>
+  </metadata>
+  <files>
+     <file src="readme.txt" target="readme.txt" /> 
+     <!--Standard/PCL-->
+     <file src="MapsPlugin\Plugin.MapsPlugin\bin\Release\Plugin.MapsPlugin.*" target="lib\netstandard1.0" />
+
+     <!--Xamarin.Android-->
+     <file src="MapsPlugin\Plugin.MapsPlugin.Android\bin\Release\Plugin.MapsPlugin.*" target="lib\MonoAndroid10" />
+  
+     <!--Xamarin.iOS-->
+     <file src="MapsPlugin\Plugin.MapsPlugin.iOS\bin\iPhone\Release\Plugin.MapsPlugin.*" target="lib\Xamarin.iOS10" />
+  </files>
+     
+</package>
